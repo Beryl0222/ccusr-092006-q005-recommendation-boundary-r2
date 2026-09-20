@@ -1,0 +1,8 @@
+[project]
+name = "recommendation-boundary"
+version = "0.1.0"
+description = "推荐兴趣边界自主管理领域资料"
+requires-python = ">=3.11"
+
+[tool.unittest]
+start-directory = "tests"
