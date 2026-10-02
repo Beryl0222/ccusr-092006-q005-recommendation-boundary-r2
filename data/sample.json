@@ -4,6 +4,13 @@
   "occurred_at": "2026-09-20T09:00:00+08:00",
   "subject_id": "demo-005",
   "payload": {
+    "signal_id": "sig-demo-0001",
+    "source": "WATCH",
+    "topic_id": "topic-outdoor-camping",
+    "label": "户外露营",
+    "dwell_ms": 42000,
+    "commercial": false,
+    "expires_at": "2026-12-19T09:00:00+08:00",
     "note": "虚构资料，仅用于格式核对"
   }
 }

@@ -1,0 +1,252 @@
+[
+  {
+    "event_id": "sample-t-001",
+    "kind": "SIGNAL_OBSERVED",
+    "occurred_at": "2026-09-18T20:10:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "signal_id": "sig-1001",
+      "source": "WATCH",
+      "topic_id": "topic-home-cooking",
+      "label": "家常菜",
+      "dwell_ms": 38000,
+      "commercial": false,
+      "expires_at": "2026-12-17T20:10:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-002",
+    "kind": "SIGNAL_OBSERVED",
+    "occurred_at": "2026-09-18T20:31:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "signal_id": "sig-1002",
+      "source": "SEARCH",
+      "topic_id": "topic-home-cooking",
+      "label": "家常菜：主动搜索“糖醋排骨”",
+      "query": "糖醋排骨做法",
+      "commercial": false,
+      "expires_at": "2026-12-17T20:31:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-003",
+    "kind": "SIGNAL_OBSERVED",
+    "occurred_at": "2026-09-18T21:02:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "signal_id": "sig-1003",
+      "source": "NEGATIVE_FEEDBACK",
+      "topic_id": "topic-big-appetite",
+      "label": "不感兴趣：大胃王吃播",
+      "target_id": "item-88421",
+      "feedback_scope": "TOPIC",
+      "commercial": false,
+      "expires_at": "2027-09-18T21:02:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-004",
+    "kind": "INTEREST_INFERRED",
+    "occurred_at": "2026-09-18T21:05:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "interest_id": "int-2001",
+      "topic_id": "topic-home-cooking",
+      "label": "家常菜",
+      "category": "cat-food",
+      "aliases": ["家庭烹饪", "家常菜谱"],
+      "source_signal_ids": ["sig-1001", "sig-1002"],
+      "sensitivity": "STANDARD",
+      "retention": "LONG_TERM",
+      "commercial": false,
+      "expires_at": "2026-12-18T21:05:00+08:00",
+      "policy_version": "policy-2026-09-01"
+    }
+  },
+  {
+    "event_id": "sample-t-005",
+    "kind": "BOUNDARY_CHANGED",
+    "occurred_at": "2026-09-19T08:00:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "change_id": "chg-3001",
+      "action": "SUPPRESS",
+      "target": {"type": "TOPIC", "id": "topic-big-appetite", "label": "大胃王吃播"},
+      "aliases": ["暴饮暴食挑战", "速食比赛"],
+      "reason": "用户对该主题点击不感兴趣（主题级）",
+      "effective_at": "2026-09-19T08:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-006",
+    "kind": "BOUNDARY_CHANGED",
+    "occurred_at": "2026-09-19T08:05:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "change_id": "chg-3002",
+      "action": "SET_EXPLORATION_FREQUENCY",
+      "target": {"type": "ACCOUNT", "id": "demo-101"},
+      "reason": "用户希望多样性探索占比不超过 10%",
+      "constraints": {"max_frequency_per_100": 10},
+      "effective_at": "2026-09-19T08:05:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-007",
+    "kind": "BOUNDARY_CHANGED",
+    "occurred_at": "2026-09-19T08:06:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "change_id": "chg-3003",
+      "action": "SET_SAFETY_BOUNDARY",
+      "target": {"type": "ACCOUNT", "id": "demo-101"},
+      "reason": "探索内容须满足基础内容安全边界",
+      "safety_boundary_version": "safety-2026-07-15",
+      "effective_at": "2026-09-19T08:06:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-008",
+    "kind": "SIGNAL_OBSERVED",
+    "occurred_at": "2026-09-19T12:00:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "signal_id": "sig-1004",
+      "source": "CAMPAIGN",
+      "topic_id": "topic-brand-seasoning",
+      "label": "运营活动：某调味品牌互动任务",
+      "campaign_id": "camp-77",
+      "commercial": true,
+      "expires_at": "2026-10-03T12:00:00+08:00"
+    }
+  },
+  {
+    "event_id": "sample-t-009",
+    "kind": "INTEREST_INFERRED",
+    "occurred_at": "2026-09-19T12:01:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "interest_id": "int-2002",
+      "topic_id": "topic-brand-seasoning",
+      "label": "品牌调味（投放）",
+      "category": "cat-ads-cpg",
+      "aliases": ["品牌调料活动"],
+      "source_signal_ids": ["sig-1004"],
+      "sensitivity": "STANDARD",
+      "retention": "SESSION",
+      "commercial": true,
+      "expires_at": "2026-10-03T12:01:00+08:00",
+      "policy_version": "policy-2026-09-01"
+    }
+  },
+  {
+    "event_id": "sample-t-010",
+    "kind": "PROFILE_ACCESSED",
+    "occurred_at": "2026-09-20T09:00:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "access_id": "acc-4001",
+      "consumer": "organic-feed-ranker",
+      "policy_version": "policy-2026-09-01",
+      "purpose": "RANK_ORGANIC",
+      "channel": "ORGANIC",
+      "decision_id": "dec-5001",
+      "used_signal_ids": ["sig-1001", "sig-1002"],
+      "used_interest_ids": ["int-2001"]
+    }
+  },
+  {
+    "event_id": "sample-t-011",
+    "kind": "PROFILE_ACCESSED",
+    "occurred_at": "2026-09-20T09:00:01+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "access_id": "acc-4002",
+      "consumer": "ads-ranker",
+      "policy_version": "policy-2026-09-01",
+      "purpose": "RANK_ADS",
+      "channel": "ADS",
+      "decision_id": "dec-5002",
+      "used_signal_ids": ["sig-1004"],
+      "used_interest_ids": ["int-2002"]
+    }
+  },
+  {
+    "event_id": "sample-t-012",
+    "kind": "PROFILE_ACCESSED",
+    "occurred_at": "2026-09-20T09:00:02+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "access_id": "acc-4003",
+      "consumer": "exploration-mixer",
+      "policy_version": "policy-2026-09-01",
+      "purpose": "EXPLORATION",
+      "channel": "ORGANIC",
+      "decision_id": "dec-5003",
+      "used_signal_ids": [],
+      "used_interest_ids": [],
+      "constraints": {
+        "max_frequency_per_100": 10,
+        "safety_boundary_version": "safety-2026-07-15"
+      }
+    }
+  },
+  {
+    "event_id": "sample-t-013",
+    "kind": "WITHDRAWAL_PROPAGATED",
+    "occurred_at": "2026-09-20T10:15:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "withdrawal_id": "wd-6001",
+      "requested_at": "2026-09-20T10:00:00+08:00",
+      "scope": {"type": "SIGNAL", "id": "sig-1001"},
+      "targets": ["sig-1001"],
+      "status": "PROPAGATED",
+      "devices": [
+        {"device_id": "dev-phone-a", "status": "ACKED", "acked_at": "2026-09-20T10:05:00+08:00"},
+        {"device_id": "dev-tablet-b", "status": "ACKED", "acked_at": "2026-09-20T10:09:00+08:00"}
+      ],
+      "caches": [
+        {"cache_scope": "ranker:organic", "status": "EVICTED", "evicted_at": "2026-09-20T10:10:00+08:00", "expires_at": "2026-09-20T12:00:00+08:00"},
+        {"cache_scope": "exploration:organic", "status": "EXPIRED", "evicted_at": null, "expires_at": "2026-09-20T10:12:00+08:00"}
+      ]
+    }
+  },
+  {
+    "event_id": "sample-t-014",
+    "kind": "INTEREST_INFERRED",
+    "occurred_at": "2026-09-20T10:20:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "interest_id": "int-2003",
+      "topic_id": "topic-home-cooking",
+      "label": "家常菜（仅依主动搜索重新推断）",
+      "category": "cat-food",
+      "aliases": ["家庭烹饪", "家常菜谱"],
+      "source_signal_ids": ["sig-1002"],
+      "sensitivity": "STANDARD",
+      "retention": "LONG_TERM",
+      "commercial": false,
+      "expires_at": "2026-12-19T10:20:00+08:00",
+      "policy_version": "policy-2026-09-01",
+      "note": "sig-1001 撤回后，剔除该依据，用仍有效的搜索信号重新推断"
+    }
+  },
+  {
+    "event_id": "sample-t-015",
+    "kind": "PROFILE_ACCESSED",
+    "occurred_at": "2026-09-20T10:25:00+08:00",
+    "subject_id": "demo-101",
+    "payload": {
+      "access_id": "acc-4004",
+      "consumer": "organic-feed-ranker",
+      "policy_version": "policy-2026-09-01",
+      "purpose": "RANK_ORGANIC",
+      "channel": "ORGANIC",
+      "decision_id": "dec-5004",
+      "used_signal_ids": ["sig-1002"],
+      "used_interest_ids": ["int-2003"]
+    }
+  }
+]
