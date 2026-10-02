@@ -1,0 +1,15 @@
+{
+  "event_id": "sample-005-003",
+  "kind": "INTEREST_INFERRED",
+  "occurred_at": "2026-09-20T09:10:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "entry_id": "entry-demo-071",
+    "human_label": "家常菜教程",
+    "source_signal_ids": ["sample-005-001"],
+    "basis": "repeated_watch",
+    "sensitivity": "normal",
+    "expires_at": "2026-12-20T09:10:00+08:00",
+    "note": "虚构资料，仅用于格式核对：人类化可读条目，带来源信号与有效期"
+  }
+}

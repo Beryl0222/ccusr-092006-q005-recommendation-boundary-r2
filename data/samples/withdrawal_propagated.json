@@ -1,0 +1,15 @@
+{
+  "event_id": "sample-005-010",
+  "kind": "WITHDRAWAL_PROPAGATED",
+  "occurred_at": "2026-09-21T08:30:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "withdrawal_id": "withdrawal-demo-500",
+    "scope": "category-demo-040",
+    "revoked_alias_group": "alias-group-demo-040",
+    "device_ids": ["device-demo-a", "device-demo-b"],
+    "cache_expires_at": "2026-09-21T09:00:00+08:00",
+    "state": "propagating",
+    "note": "虚构资料，仅用于格式核对：撤回向所有活跃设备传播并记录缓存过期时间"
+  }
+}

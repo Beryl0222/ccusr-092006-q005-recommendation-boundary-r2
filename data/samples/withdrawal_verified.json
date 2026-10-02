@@ -1,0 +1,14 @@
+{
+  "event_id": "sample-005-011",
+  "kind": "WITHDRAWAL_VERIFIED",
+  "occurred_at": "2026-09-21T09:05:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "withdrawal_id": "withdrawal-demo-500",
+    "verified_at": "2026-09-21T09:05:00+08:00",
+    "devices_confirmed": ["device-demo-a", "device-demo-b"],
+    "caches_expired": true,
+    "participates_in_new_decisions": false,
+    "note": "虚构资料，仅用于格式核对：所有活跃设备确认且缓存过期后，撤回信号不再参与新决策"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "event_id": "sample-005-005",
+  "kind": "BOUNDARY_CHANGED",
+  "occurred_at": "2026-09-21T08:05:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "action": "configure_exploration",
+    "scope": "profile-demo-005",
+    "exploration": {
+      "max_frequency_per_day": 3,
+      "safety_boundary": "strict"
+    },
+    "note": "虚构资料，仅用于格式核对：用户自配的探索频率与内容安全边界"
+  }
+}

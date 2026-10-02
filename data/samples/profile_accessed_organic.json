@@ -1,0 +1,13 @@
+{
+  "event_id": "sample-005-006",
+  "kind": "PROFILE_ACCESSED",
+  "occurred_at": "2026-09-21T08:10:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "accessor": "recommendation-engine-demo",
+    "policy_version": "policy-demo-v7",
+    "purpose": "organic_feed",
+    "channel": "organic",
+    "note": "虚构资料，仅用于格式核对：取用画像登记策略版本与用途"
+  }
+}

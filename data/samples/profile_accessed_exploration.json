@@ -1,0 +1,17 @@
+{
+  "event_id": "sample-005-007",
+  "kind": "PROFILE_ACCESSED",
+  "occurred_at": "2026-09-21T08:11:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "accessor": "recommendation-engine-demo",
+    "policy_version": "policy-demo-v7",
+    "purpose": "exploration",
+    "channel": "organic",
+    "exploration": {
+      "max_frequency_per_day": 3,
+      "safety_boundary": "strict"
+    },
+    "note": "虚构资料，仅用于格式核对：探索用途携带用户配置的频率与安全边界快照"
+  }
+}

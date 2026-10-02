@@ -1,0 +1,13 @@
+{
+  "event_id": "sample-005-002",
+  "kind": "SIGNAL_OBSERVED",
+  "occurred_at": "2026-09-20T09:05:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "signal_type": "negative_feedback",
+    "target_id": "topic-demo-320",
+    "sensitivity": "normal",
+    "feedback_scope": "topic",
+    "note": "虚构资料，仅用于格式核对：负反馈显式标注作用于主题，而非单条作品或整个账号"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "event_id": "sample-005-004",
+  "kind": "BOUNDARY_CHANGED",
+  "occurred_at": "2026-09-21T08:00:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "action": "reset_category",
+    "scope": "category-demo-040",
+    "revoked_alias_group": "alias-group-demo-040",
+    "note": "虚构资料，仅用于格式核对：重置同时注销别名组，旧策略不得通过别名恢复"
+  }
+}

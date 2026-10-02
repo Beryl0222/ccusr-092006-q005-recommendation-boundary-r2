@@ -1,0 +1,27 @@
+{
+  "event_id": "sample-005-009",
+  "kind": "RECOMMENDATION_EXPLAINED",
+  "occurred_at": "2026-09-21T08:20:00+08:00",
+  "subject_id": "demo-005",
+  "payload": {
+    "recommendation_id": "rec-demo-9001",
+    "policy_version": "policy-demo-v7",
+    "purpose": "exploration",
+    "channel": "organic",
+    "signals_used": [
+      {
+        "entry_id": "entry-demo-071",
+        "human_label": "家常菜教程",
+        "still_valid": true,
+        "expires_at": "2026-12-20T09:10:00+08:00"
+      },
+      {
+        "entry_id": "entry-demo-088",
+        "human_label": "天文科普长视频",
+        "still_valid": false,
+        "expires_at": "2026-09-21T00:00:00+08:00"
+      }
+    ],
+    "note": "虚构资料，仅用于格式核对：客服可据此说明长知识视频来自兴趣拓展而非商业投放"
+  }
+}
